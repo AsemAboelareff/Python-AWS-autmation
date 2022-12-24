@@ -1,21 +1,5 @@
 {
     "RegionId": "us-east-1",
     "TemplateUrl": "https://425364941712.s3.amazonaws.com/template.yml",
-    "StackName" : "Asem" ,
-    "EnvironmentType": "dev",
-    "VpcCIDR": "10.192.0.0/16",
-    "PublicSubnet1CIDR": "10.192.10.0/24",
-    "PublicSubnet2CIDR": "10.192.11.0/24",
-    "PublicSubnet3CIDR": "10.192.12.0/24",
-    "PrivateSubnet1CIDR": "10.192.20.0/24",
-    "PrivateSubnet2CIDR": "10.192.22.0/24",
-    "PrivateSubnet3CIDR": "10.192.24.0/24",
-    "DatabaseSubnet1CIDR": "10.192.21.0/24",
-    "DatabaseSubnet2CIDR": "10.192.23.0/24",
-    "DatabaseSubnet3CIDR": "10.192.25.0/24",
-    "LatestAmiID": "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2",
-    "ALBAccessCIDR": "0.0.0.0/0",
-    "ServerInstanceType": "t2.micro",
-    "WebAsgMax": "4",
-    "WebAsgMin": "3"
+    "StackName" : "Asem" 
     }

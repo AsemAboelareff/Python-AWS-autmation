@@ -5,7 +5,7 @@ import configparser
 def main():
 #get AK/SK from credentials
     crd = configparser.RawConfigParser()
-    crd.read('credentials')
+    crd.read('~/.aws/credentials')
     AK = crd.get('default','aws_access_key_id')
     SK = crd.get('default','aws_secret_access_key') 
 #get parameters
@@ -14,8 +14,9 @@ def main():
     region = parameters_data["RegionId"]
     session = boto3.client('cloudformation', region, aws_access_key_id=AK, aws_secret_access_key=SK)
     template_url = parameters_data["TemplateUrl"]
+    stack_name = parameters_data["StackName"]
 #create stack
-    result = session.create_stack(StackName='Asem',TemplateURL=template_url)
+    result = session.create_stack(StackName=stack_name,TemplateURL=template_url)
     print(result)
     
     
